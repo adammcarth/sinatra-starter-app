@@ -1,0 +1,8 @@
+# Prevent database config file showing to public
+config/database.yml
+
+# Ignore other stuff
+*.swp
+*~
+.project
+.DS_Store

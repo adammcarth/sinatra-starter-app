@@ -1,0 +1,25 @@
+# Change this file to "database.yml" to configure MySQL. Git will then block this from public access on GitHub.
+development:
+  adapter: mysql2
+  host: 127.0.0.1
+  username: root
+  password: 
+  database: sinatra
+  encoding: utf8
+  port: 3306
+test:
+  adapter: mysql2
+  host: 127.0.0.1
+  username: root
+  password: 
+  database: sinatra_test
+  encoding: utf8
+  port: 3306
+production:
+  adapter: mysql2
+  host: localhost
+  username: root
+  password: 123456789
+  database: sinatra_production
+  encoding: utf8
+  port: 3306

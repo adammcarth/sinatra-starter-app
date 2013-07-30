@@ -1,0 +1,6 @@
+install_settings:
+  public_folder: "/public"
+  environment: :development
+  sessions: true
+  # Not compatible with windows:
+  # server: shotgun

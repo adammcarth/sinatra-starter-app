@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml/DTD/xhtml-transitional.dtd">
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title><%= page_title %> Sinatra</title>
+  <meta name="keywords" content="cool,story,bro"/>
+  <meta name="description" content="My Sinatra starting template."/>
+  <meta name="language" content="Ruby">
+  <meta name="environment" content="<%= ENV["RACK_ENV"] %>">
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="<%= stylesheet_path "application" %>" />
+</head>
+
+<body>
+<%= styled_flash.indent(2) %>
+<%= yield.indent(2) %>
+  <!-- Javascript Files -->
+  <script type="text/javascript" src="<%= javascript_path "application" %>"></script>
+</body>
+</html>

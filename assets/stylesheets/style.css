@@ -1,0 +1,18 @@
+body {
+  font-family:"Helvetica", "Arial", sans-serif;
+  background-color:#f9f9f9;
+  font-size:14px;
+}
+
+p {
+  font-size:16px;
+  line-height:24px;
+}
+
+a, a:visited {
+  color:#4183c4;
+}
+
+h1 {
+  font-size:44px;
+}
