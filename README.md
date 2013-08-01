@@ -66,7 +66,7 @@ Again, a helper method has been added to simulate *rails-style* partials. To use
 I'm a login form :)
 
 # views/index.erb
-<%= render :partial => "login" %>
+&gt;%= render :partial => "login" %>
 
 # Browser Output:
 I'm a login form :)
