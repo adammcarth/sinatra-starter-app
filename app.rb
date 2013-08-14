@@ -17,6 +17,7 @@ end
 ########## HELPER METHODS ##########
 helpers do
   require "./config/helpers/string"
+  require "./helpers/datetime"
 
   include Sprockets::Helpers
   Sprockets::Helpers.configure do |config|
@@ -39,6 +40,14 @@ helpers do
     else
       super
     end
+  end
+  def parsed_url
+    u = URI.parse(request.url)
+    return CGI.parse(u.query) if u.query
+  end
+  def query_string(target)
+    t = target
+    return parsed_url[t].first if parsed_url
   end
 end
 
