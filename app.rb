@@ -32,7 +32,7 @@ helpers do
       @page_title.to_s + " |" : nil
   end
   def uploads_path
-    "./uploads"
+    "/uploads"
   end
   def render(*args)
     if args.first.is_a?(Hash) && args.first.keys.include?(:partial)
